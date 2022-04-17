@@ -6,5 +6,82 @@ light blue: #1c5380
 
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  margin: 0 auto;
+  background-image: url(../images/bgtile.png);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: row;
+}
+
+.boldtext {
+  font-weight: bold;
+}
+
+h1 {
+  color: #06365f;
+}
+
+#instagram-description p {
+  letter-spacing: 0.5px;
+}
+
+.kindofheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#buttonlogin {
+  background-color: #1c5380;
+  box-shadow: 0 4px 4px -4px black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 12.5px;
+  height: 33%;
+  margin-top: 12.5px;
+}
+
+#buttonlogin img {
+  margin-right: 10px;
+}
+
+#buttonlogin a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+footer ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+footer ul a {
+  transition-duration: 0.3s;
+  color: #1c5380;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 15px;
+}
+
+footer ul a:hover {
+  color: gray;
 }
