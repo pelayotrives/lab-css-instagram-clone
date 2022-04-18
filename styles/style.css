@@ -5,17 +5,20 @@ light blue: #1c5380
 */
 
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 auto;
-  background-image: url(../images/bgtile.png);
+  background: url(../images/bgtile.png);
   background-position: top;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 30%;
   height: 100vh;
 }
 
 .maincontent {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin-top: 200px;
 }
 
 .boldtext {
@@ -24,6 +27,7 @@ body {
 
 h1 {
   color: #06365f;
+  width: 46%;
 }
 
 #instagram-description p {
@@ -34,10 +38,11 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 #buttonlogin {
-  background-color: #1c5380;
+  background:linear-gradient(#58a5e4, #2d7dbf, #1c5380);
   box-shadow: 0 4px 4px -4px black;
   display: flex;
   justify-content: center;
@@ -45,8 +50,8 @@ h1 {
   align-items: center;
   flex-direction: row;
   padding: 12.5px;
-  height: 33%;
-  margin-top: 12.5px;
+  height: 28%;
+  margin-top: 15px;
 }
 
 #buttonlogin img {
@@ -59,10 +64,40 @@ h1 {
   color: white;
 }
 
+.whiteboard {
+  background-color: white;
+  padding: 20px;
+}
+
+#text-container, #buttons-container {
+  margin-left: 20px;;
+}
+
+.whiteboard p {
+  width: 79%;
+}
+
+.section-one {
+  margin-right: 50px;
+}
+
 .section-two {
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-left: 15px;
+}
+
+#buttons-container {
+  margin-top: 40px;
+}
+
+#button-apple {
+  margin-right: 15px;
+}
+
+footer {
+  margin-top: 40px;
 }
 
 footer ul {
@@ -83,5 +118,9 @@ footer ul a {
 }
 
 footer ul a:hover {
+  color: gray;
+}
+
+#copyright {
   color: gray;
 }
